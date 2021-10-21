@@ -4,7 +4,7 @@ public with sharing class MyApexclass {
         List<Account> acclist=new List<Account>();
         List<id> accids=new List<id>();
         for(Contact con:cnt){
-        if(con.AccountId!=null){
+        if(con.AccountId!= null){
         accids.add(con.AccountId);
         }
         List<Account>contacts=[select name,(select name from contacts where Status__c=true)from account where id in :accids];
