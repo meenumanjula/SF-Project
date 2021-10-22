@@ -45,6 +45,10 @@
                 <behavior>Edit</behavior>
                 <field>Number_of_active_contacts__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>no_of_repeated_contracts__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
