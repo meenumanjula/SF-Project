@@ -7,9 +7,9 @@ public with sharing class MyApexclass {
         if(con.AccountId!= null){
         accids.add(con.AccountId);
         }
-        List<Account>contacts=[select name,(select name from contacts where Status__c=true)from account where id in :accids];
-        for(Account acc :contacts){
-        acc.Number_of_active_contacts__c=acc.Contacts.size();
+        List<Account>contac=[select name,(select name from contacts where Status__c=true)from account where id in :accids];
+        for(Account acc :contac){
+        acc.Number_of_active_contacts__c=acc.Contac.size();
         acclist.add(acc); 
         }
         update acclist;
